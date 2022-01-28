@@ -1,4 +1,4 @@
-    const cliente = {
+const cliente = {
 
     nome: "Andre",
     idade: 35,
@@ -13,35 +13,33 @@
             dataNasc: "20/03/2021"
         },
 
-        {   
+        {
             nome: "Samia Maria",
             parentesco: "filha",
             dataNasc: "04/01/2014"
         }
     ],
 
-    saldo:100,
-    
-    depositar:function(valor){
-    this.saldo += valor
-    
+    saldo: 100,
+
+    depositar: function (valor) {
+        this.saldo += valor
+
     }
 }
 
 
 
 
-function oferecerSeguro (obj){
+function oferecerSeguro(obj) {
 
-const propsClientes = Object.keys(obj);
+    const propsClientes = Object.keys(obj);
 
-if (propsClientes.includes ("dependentes"))
+    if (propsClientes.includes("dependentes")) {
 
-{ 
+        console.log("Oferta de seguro de vida para " + obj.nome)
 
-   console.log("Oferta de seguro de vida para " + obj.nome)
-
-}
+    }
 
 }
 

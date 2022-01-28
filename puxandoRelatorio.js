@@ -1,7 +1,7 @@
-    //NESTA ETAPA VAMOS TRABALHAR COM O MÉTODO ( FOR-IN )
-    
+//NESTA ETAPA VAMOS TRABALHAR COM O MÉTODO ( FOR-IN )
 
-    const cliente = {
+
+const cliente = {
 
     nome: "Andre",
     idade: 35,
@@ -17,41 +17,39 @@
             dataNasc: "20/03/2021"
         },
 
-        {   
+        {
             nome: "Samia Maria",
             parentesco: "filha",
             dataNasc: "04/01/2014"
-
         }
     ],
 
-    saldo:100,
-    
-    depositar:function(valor){
-    this.saldo += valor
-    
+    saldo: 100,
+
+    depositar: function (valor) {
+        this.saldo += valor
+
     }
 
 }
-  
 
 
-let relatorio=" ";
 
-for (let info in cliente){
-     if(typeof cliente[info]==="object" || typeof cliente [info]==="function")
-     {
+let relatorio = " ";
 
-      continue 
+for (let info in cliente) {
+    if (typeof cliente[info] === "object" || typeof cliente[info] === "function") {
 
-     } else{
-    
-    relatorio += 
-    
-    info +  " - " + cliente[info]    
+        continue
 
-     }
-      }
+    } else {
+
+        relatorio +=
+
+            info + " - " + cliente[info]
+
+    }
+}
 
 console.log(relatorio)
 
