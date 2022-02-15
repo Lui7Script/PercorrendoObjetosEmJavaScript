@@ -38,11 +38,15 @@ const cliente = {
 let relatorio = " ";
 
 for (let info in cliente) {
-    if (typeof cliente[info] === "object" || typeof cliente[info] === "function") {
+    if (typeof cliente[info] === "object" || typeof cliente[info] === "function") 
+    
+    {
 
         continue
 
-    } else {
+    } 
+    
+    else {
 
         relatorio +=
 

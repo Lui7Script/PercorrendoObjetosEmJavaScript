@@ -1,5 +1,7 @@
 
-const banco = [{
+const banco = [
+
+{
     nome: "Santader",
     cnpj: "000 000 000 00",
     cidade: "Belo Horizonte",
@@ -7,7 +9,6 @@ const banco = [{
         {
             Metódo: "Débito"
         },
-
         {
             Metódo: "Crédito"
         }
@@ -20,9 +21,8 @@ const banco = [{
     cidade: "Belo Horizonte",
     formaDePagamento: [
         {
-            Metódo: "Débito"
+            Metódo: "Débito" 
         },
-
         {
             Metódo: "Crédito"
         }
@@ -37,7 +37,6 @@ const banco = [{
         {
             Metódo: "Débito"
         },
-
         {
             Metódo: "Crédito"
         }
@@ -61,7 +60,10 @@ const banco = [{
 ]
 
 
-const Pagamento = [banco[0]]
+const exibirBanco = [...banco[0].formaDePagamento, ...banco[1].formaDePagamento, ...banco[2].formaDePagamento, banco[3].formaDePagamento]
 
 
-console.log(Pagamento)
+console.log(exibirBanco)
+
+
+

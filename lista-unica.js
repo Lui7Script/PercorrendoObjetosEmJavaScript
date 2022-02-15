@@ -26,7 +26,5 @@ const clientes = [
 ]
 
 
-
-
-// const listaDependentes = [...clientes[0].dependentes,...clientes[1].dependentes]
-// console.log(listaDependentes)
+ const listaDependentes = [...clientes[0].dependentes,...clientes[1].dependentes]
+ console.log(listaDependentes)
