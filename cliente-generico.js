@@ -23,6 +23,11 @@ const luiz = new cliente("Luiz", "000 000 000 00", "gustavol2010@yahoo.com", 150
 
 
 
+
+
+
+
+
 function CadastroMotorista(id,nome, cpf, cnh, veiculo, revavam, vencimentoCarteira) {
     this.id = id;
     this.nome = nome;
@@ -38,10 +43,33 @@ const Motorista2 = new CadastroMotorista("2","Luiz Carlos", "111 111 111 11", " 
 const Motorista3 = new CadastroMotorista("3","Juliano", "222 222 222 22", "D", "Kombi", "333333333", "20 / 04 / 2023")
 const Motorista4 = new CadastroMotorista("4","Guilherme", "333 333 333 33", "B", "Scanner", "444 444 444 44", "25 / 05 / 2025")
 
-console.log(Motorista1)
-console.log(Motorista2)
-console.log(Motorista3)
-console.log(Motorista4)
+//console.log(Motorista1)
+//console.log(Motorista2)
+//console.log(Motorista3)
+//console.log(Motorista4)
+
+
+
+
+
+
+
+
+
+function cadastroALuno(matricula, nome, sexo , telefone, endereço, série) {
+
+ this.matricula = matricula;
+ this.nome = nome;
+ this.sexo = sexo;
+ this.telefone = telefone;
+ this.endereço = endereço;
+ this.série = série;
+}
+
+
+const aluno = new cadastroALuno ("1" , "Pedrin" , "M" , "34546332" , " Rua 100" , "2 grau");
+
+console.log(aluno)
 
 
 
@@ -61,6 +89,30 @@ console.log(Motorista4)
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
 
 
 function abrirConta(nome, cpf, cartao, id, TipoDeConta, DepositarDinheiro) {
